@@ -80,6 +80,11 @@ class MainViewController: UIViewController {
         self.reloadButton.addGestureRecognizer(reloadDataRecognizer)
     }
     
+    private func openDetailsVC(index: Int){
+        guard let controller = storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else{return}
+        controller.customerData = self.filteredArray[index]
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
 
 }
 //MARK: - IBActions
@@ -179,6 +184,10 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.openDetailsVC(index: indexPath.row)
+    }
 }
 //MARK: -CollectionView delegate
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -199,5 +208,9 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.openDetailsVC(index: indexPath.item)
     }
 }
