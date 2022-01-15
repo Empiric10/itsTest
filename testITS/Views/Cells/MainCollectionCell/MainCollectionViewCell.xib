@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MainCollectionViewCell" reuseIdentifier="MainCollectionViewCell" id="FA9-1e-Owp" customClass="MainCollectionViewCell" customModule="testITS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="183" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="drW-D4-AXv">
+                <rect key="frame" x="0.0" y="0.0" width="183" height="136"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDp-Zu-hNE">
+                        <rect key="frame" x="70.5" y="10" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fW-Du-kgC">
+                        <rect key="frame" x="10" y="41" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJC-zi-Ytk">
+                        <rect key="frame" x="10" y="72" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pcy-yC-PVm">
+                        <rect key="frame" x="0.0" y="0.0" width="183" height="136"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Pcy-yC-PVm" secondAttribute="bottom" id="23D-S6-OeP"/>
+                    <constraint firstItem="CDp-Zu-hNE" firstAttribute="centerX" secondItem="drW-D4-AXv" secondAttribute="centerX" id="6Yu-ek-yp1"/>
+                    <constraint firstItem="2fW-Du-kgC" firstAttribute="top" secondItem="CDp-Zu-hNE" secondAttribute="bottom" constant="10" id="8Ph-ea-e88"/>
+                    <constraint firstItem="CDp-Zu-hNE" firstAttribute="top" secondItem="drW-D4-AXv" secondAttribute="top" constant="10" id="DMD-k9-Q8s"/>
+                    <constraint firstItem="DJC-zi-Ytk" firstAttribute="top" secondItem="2fW-Du-kgC" secondAttribute="bottom" constant="10" id="OPP-3w-HpI"/>
+                    <constraint firstAttribute="trailing" secondItem="Pcy-yC-PVm" secondAttribute="trailing" id="Tf3-9Y-9mm"/>
+                    <constraint firstItem="Pcy-yC-PVm" firstAttribute="top" secondItem="drW-D4-AXv" secondAttribute="top" id="d8u-vO-xzh"/>
+                    <constraint firstItem="Pcy-yC-PVm" firstAttribute="leading" secondItem="drW-D4-AXv" secondAttribute="leading" id="kr6-yP-VpF"/>
+                    <constraint firstItem="DJC-zi-Ytk" firstAttribute="leading" secondItem="drW-D4-AXv" secondAttribute="leading" constant="10" id="nMV-CS-twF"/>
+                    <constraint firstItem="2fW-Du-kgC" firstAttribute="leading" secondItem="drW-D4-AXv" secondAttribute="leading" constant="10" id="z5a-XE-Rra"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="183" height="136"/>
+            <connections>
+                <outlet property="ageLabel" destination="2fW-Du-kgC" id="t8T-Yn-Cuq"/>
+                <outlet property="borderView" destination="Pcy-yC-PVm" id="7Ct-3P-rQt"/>
+                <outlet property="genderLabel" destination="DJC-zi-Ytk" id="hnP-Ls-8hY"/>
+                <outlet property="nameLabel" destination="CDp-Zu-hNE" id="HjA-Ju-moE"/>
+            </connections>
+            <point key="canvasLocation" x="-28.260869565217394" y="-21.428571428571427"/>
+        </collectionViewCell>
+    </objects>
+</document>

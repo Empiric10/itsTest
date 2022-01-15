@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MainTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainTableViewCell" rowHeight="100" id="58E-IE-wb6" customClass="MainTableViewCell" customModule="testITS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="58E-IE-wb6" id="Vby-wF-tTi">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAs-gm-M4e">
+                        <rect key="frame" x="10" y="39.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc6-at-p6z">
+                        <rect key="frame" x="10" y="8.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeO-wv-pbf">
+                        <rect key="frame" x="10" y="70.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="qc6-at-p6z" firstAttribute="leading" secondItem="Vby-wF-tTi" secondAttribute="leading" constant="10" id="Ewc-cS-zMO"/>
+                    <constraint firstItem="oAs-gm-M4e" firstAttribute="top" secondItem="qc6-at-p6z" secondAttribute="bottom" constant="10" id="MVl-Mp-vtt"/>
+                    <constraint firstItem="oAs-gm-M4e" firstAttribute="leading" secondItem="Vby-wF-tTi" secondAttribute="leading" constant="10" id="OC9-hE-pPz"/>
+                    <constraint firstItem="KeO-wv-pbf" firstAttribute="top" secondItem="oAs-gm-M4e" secondAttribute="bottom" constant="10" id="eYc-pw-sh6"/>
+                    <constraint firstItem="oAs-gm-M4e" firstAttribute="centerY" secondItem="Vby-wF-tTi" secondAttribute="centerY" id="kib-fh-QOE"/>
+                    <constraint firstItem="KeO-wv-pbf" firstAttribute="leading" secondItem="Vby-wF-tTi" secondAttribute="leading" constant="10" id="v5h-kn-wOd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="ageLabel" destination="KeO-wv-pbf" id="IwC-Q0-KjJ"/>
+                <outlet property="genderLabel" destination="oAs-gm-M4e" id="6z8-bz-xt0"/>
+                <outlet property="nameLabel" destination="qc6-at-p6z" id="1zO-ZF-rnZ"/>
+            </connections>
+            <point key="canvasLocation" x="-139.13043478260872" y="112.5"/>
+        </tableViewCell>
+    </objects>
+</document>
