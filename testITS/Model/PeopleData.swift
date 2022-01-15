@@ -13,4 +13,6 @@ struct PeopleList: Codable {
     var phone: String
     var about: String
     var address: String
+    var latitude: Double
+    var longitude: Double
 }

@@ -14,6 +14,7 @@
 		8E7729192791B0AC0006751A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E7729182791B0AC0006751A /* MainTableViewCell.xib */; };
 		8EAA5C1627920FE200E9CE24 /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EAA5C1527920FE200E9CE24 /* MainCollectionViewCell.xib */; };
 		8EAA5C1C2792116500E9CE24 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA5C1B2792116500E9CE24 /* MainCollectionViewCell.swift */; };
+		8EB889552792F68800D76A0D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB889542792F68800D76A0D /* MapViewController.swift */; };
 		8ECD833C2792D92900D0B8FA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD833B2792D92900D0B8FA /* DetailsViewController.swift */; };
 		8ED17E1F2790B73500A28D81 /* generated-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8ED17E1E2790B73500A28D81 /* generated-2.json */; };
 		8ED17E212790B9D600A28D81 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED17E202790B9D600A28D81 /* MainVC.swift */; };
@@ -34,6 +35,7 @@
 		8E7729182791B0AC0006751A /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		8EAA5C1527920FE200E9CE24 /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
 		8EAA5C1B2792116500E9CE24 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		8EB889542792F68800D76A0D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8ECD833B2792D92900D0B8FA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		8ED17E1E2790B73500A28D81 /* generated-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "generated-2.json"; sourceTree = "<group>"; };
 		8ED17E202790B9D600A28D81 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -131,6 +133,14 @@
 			path = MainCollectionCell;
 			sourceTree = "<group>";
 		};
+		8EB889532792F67300D76A0D /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				8EB889542792F68800D76A0D /* MapViewController.swift */,
+			);
+			path = MapVC;
+			sourceTree = "<group>";
+		};
 		8ECD83362792CC4600D0B8FA /* DetailsVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +164,7 @@
 			children = (
 				8E77291C2791D3500006751A /* MainVC */,
 				8ECD83362792CC4600D0B8FA /* DetailsVC */,
+				8EB889532792F67300D76A0D /* MapVC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -235,6 +246,7 @@
 				8ED17E2C2790BAE700A28D81 /* Bindable.swift in Sources */,
 				8ECD833C2792D92900D0B8FA /* DetailsViewController.swift in Sources */,
 				8E4B67E327832E8700AD88F5 /* AppDelegate.swift in Sources */,
+				8EB889552792F68800D76A0D /* MapViewController.swift in Sources */,
 				8ED17E322790BE4200A28D81 /* PeopleData.swift in Sources */,
 				8EAA5C1C2792116500E9CE24 /* MainCollectionViewCell.swift in Sources */,
 				8ED17E212790B9D600A28D81 /* MainVC.swift in Sources */,

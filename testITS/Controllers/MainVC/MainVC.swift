@@ -10,6 +10,7 @@ import UIKit
 class MainViewController: UIViewController {
     
     //MARK: -Outlets
+    @IBOutlet weak var openMapButton: UIImageView!
     @IBOutlet weak var reloadButton: UIImageView!
     @IBOutlet weak var collectionPresentationButton: UIImageView!
     @IBOutlet weak var tablePresentationButton: UIImageView!
@@ -78,6 +79,9 @@ class MainViewController: UIViewController {
         
         let reloadDataRecognizer = UITapGestureRecognizer(target: self, action: #selector(reloadData))
         self.reloadButton.addGestureRecognizer(reloadDataRecognizer)
+        
+        let openMapRecognizer = UITapGestureRecognizer(target: self, action: #selector(openMapVC))
+        self.openMapButton.addGestureRecognizer(openMapRecognizer)
     }
     
     private func openDetailsVC(index: Int){
@@ -132,6 +136,12 @@ extension MainViewController {
         filteredArray.sort { firstList, SecondList in
             firstList.age > SecondList.age
         }
+    }
+    
+    @IBAction func openMapVC(){
+        guard let controller = storyboard?.instantiateViewController(withIdentifier: "MapViewController") as? MapViewController else {return}
+        controller.addressesArray = self.filteredArray
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     @IBAction func changeGenderSelection(_ sender: UISegmentedControl) {
